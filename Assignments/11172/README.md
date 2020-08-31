@@ -7,4 +7,3 @@ Comparing two values to determine if they are less than, greater than, or equal 
 |source.cpp   | https://github.com/ArshiaClare/4883-Programming_Techniques-Clare/blob/master/Assignments/11172/source.cpp|it contains the source code           |
 |input.txt    | https://github.com/ArshiaClare/4883-Programming_Techniques-Clare/blob/master/Assignments/11172/input.txt|input that I got from debug on uva    |
 |11172.pdf    | https://github.com/ArshiaClare/4883-Programming_Techniques-Clare/blob/master/Assignments/11172/11172.pdf |the problem pdf                    |
-https://github.com/ArshiaClare/4883-Programming_Techniques-Clare/blob/master/Assignments/11172/11172.pdf
