@@ -6,6 +6,7 @@
 1264 - Binary Search Tree
 
 ### Sample Binary Search Tree Code
+
 ```c++
 struct node 
 { 
@@ -38,6 +39,7 @@ struct node* insert(struct node* node, int key)
     return node; 
 } 
 
+//recursive method to find the key
 struct node* search(struct node* root, int key) 
 { 
     // Base Cases: root is null or key is present at root 
@@ -53,6 +55,7 @@ struct node* search(struct node* root, int key)
 } 
    
 // A utility function to do inorder traversal of BST 
+//print method
 void inorder(struct node *root) 
 { 
     if (root != NULL) 
