@@ -7,7 +7,7 @@ The input ends with N=0
 
 |   #   | File                       | Description                                                |
 | :---: | -------------------------- | ---------------------------------------------------------- |
-|   1   |      | pdf|     
+|   1   | https://github.com/ArshiaClare/4883-Programming_Techniques-Clare/blob/master/Assignments/A06/10060/10060.pdf | pdf|     
 
 #### Process
 Using the determinant matrix given in page 285 (https://cs.msutexas.edu/~griffin/cp3.pdf) 
