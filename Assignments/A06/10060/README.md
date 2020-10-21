@@ -12,7 +12,7 @@ The input ends with N=0
 #### Process
 Using the determinant matrix given in page 285 (https://cs.msutexas.edu/~griffin/cp3.pdf) 
 ![10060](https://user-images.githubusercontent.com/35582387/96746974-5efeb780-138d-11eb-863d-e94260083339.PNG)
-This will give you A_i, then multiply A_i by the T_i.
+This will give you A_i (ignore the sign), then multiply A_i by the T_i.
 You have to add all T_i*A-i together. 
 Using the given thickness, T, and radius, R. Find S = (πR^2)*T. 
 (Sum of T_i*A-i)/S will give you the approximate number of manholes covered with the sheets.
