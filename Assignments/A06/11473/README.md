@@ -5,6 +5,12 @@
 The beautification project includes planting trees, the problem for us to solve is the spacing of these trees planted on the road. The road is described by points. They need to be spaced evenly (constant intervals). The first and last trees are planted on the first and last points. \
 The input N -number of roads, K - number of points (road), T, number of trees to be planted.
 
+### Files
+|   #   | File                       | Description                                                |
+| :---: | -------------------------- | ---------------------------------------------------------- |
+|   1   | https://github.com/ArshiaClare/4883-Programming_Techniques-Clare/blob/master/Assignments/A06/11473/11473.pdf| pdf|     
+
+
 ### Process
 ![go the distance](https://user-images.githubusercontent.com/35582387/96756151-45fc0380-1399-11eb-81f9-ef051eca14d8.PNG)
 Find the distance between each point and adding them together. \
