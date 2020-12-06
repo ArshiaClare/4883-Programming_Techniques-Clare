@@ -1,103 +1,71 @@
 #include <iostream>
-#include <string>
 #include <stack>
+#include <vector>
+#include <queue>
+
 using namespace std;
 
-int main() 
-{
-  int n,m,i;
-  string ans = "Yes";
-  bool action = false;
-  stack <int> N;
-  stack <int> temp;
-  cin>>n;
-  while(n != 0)
-  {
-    int arr[n];
-    i=0;
-    while(i<n)
-    {
-      cin>>m;
-      if(m!=0)
-      {
-        arr[i] = m;
-        i++;
+int main() {
+  int queuesize, num;
+  cin>>queuesize;
+  bool ans = true;
+  while(queuesize != 0){
+    cin>>num;
+    while(num !=0){
+      queue<int> A_station;
+      for(int i = 0; i < queuesize; i++){
+        A_station.push(i+1);
       }
-      else if(m==0){
-        cout<<endl;
-        cin>>n;
-      }
-    }
-    for(int j = n; j > 0; j--)
-    {
-      N.push(j);
-    }
-    for(int g = 0; g< n; g++){
-      if(!N.empty() && temp.empty()){
-        while(action == false){
-          if(arr[g] != N.top()){
-            temp.push(N.top());
-            N.pop();
-            action =false;
+      stack<int> station;
+      for(int i = 0; i < queuesize; i++){
+        // cout<<num<<endl;
+        if(station.empty()){
+          while(A_station.front() != num){
+            station.push(A_station.front());
+            A_station.pop();
           }
-          else if(arr[g] == N.top()){
-            N.pop();
-            action = true;
+          if(A_station.front() == num){
+            A_station.pop();
           }
         }
-      }
-      else if(!N.empty() && !temp.empty()){
-       while(action == false){
-          if(arr[g] != N.top() && arr[g] == temp.top()){
-            temp.pop();
-            action =true;
+        else if(A_station.empty()){
+          if(station.top() == num){
+            station.pop();
           }
-          else if(arr[g] != N.top() && arr[g] != temp.top()){
-            if(arr[g] > N.top()){
-              temp.push(N.top());
-              N.pop();
-              action = false;
+          else{
+            ans = false;
+          }
+        }
+        else if(!station.empty() && !A_station.empty()){
+          if(num >= A_station.front()){
+            while(A_station.front() != num){
+              station.push(A_station.front());
+              A_station.pop();
+            }
+            if(A_station.front() == num){
+              A_station.pop();
+            }
+          }
+          else if(num <= station.top()){
+            if(station.top() == num){
+              station.pop();
             }
             else{
-              ans = "No";
-              action = true;
+              ans = false;
             }
           }
-          else if(arr[g] == N.top()){
-            N.pop();
-            action = true;
-          }
-          else if(arr[g] != N.top()){
-            temp.push(N.top());
-            N.pop();
-          }
         }
+        cin>>num;
       }
-      else if(N.empty() && !temp.empty()){
-          if(arr[g] == temp.top()){
-            temp.pop();
-          }
-        }
-        action = false;
-      
-    }
-    if(N.empty() && temp.empty()){
-        ans= "Yes";
-    } else{ 
-      ans = "No";
-      while(!N.empty())
-      {
-        N.pop();
+      if(ans == false){
+        cout<<"No"<<endl;
       }
-      while(!temp.empty()){
-        temp.pop();
+      else if(ans == true){
+        cout<<"Yes"<<endl;
       }
+      ans = true;
     }
-    if(n != 0){
-      cout<<ans<<endl;
-    }
-    action = false;
-    ans = "Yes";
+    cout<<endl;
+    cin>>queuesize;
   }
-  return 0;
 }
