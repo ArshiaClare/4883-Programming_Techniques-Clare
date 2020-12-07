@@ -5,6 +5,12 @@
 12347 - Binary Search Tree
 1264 - Binary Search Tree
 
+### Overview
+Find 2 problems that deal with Binary Search Trees in some way that are part of the onlinejudge set of problems.
+Find multiple ways of implementing a Binary Search Trees in whichever language you are using. You should understand the implications of each method.
+
+Use of pointers, struct node, adding points left or right based on points and the placement based on less than, greater than.
+
 ### Sample Binary Search Tree Code
 
 ```c++
