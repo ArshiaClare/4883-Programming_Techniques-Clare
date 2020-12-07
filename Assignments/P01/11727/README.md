@@ -5,6 +5,6 @@
 
 | Folders     | Link | Description |
 | ----------- | ---------------------- |---------------------- |
-|source.cpp   | https://github.com/ArshiaClare/4883-Programming_Techniques-Clare/blob/master/Assignments/11727/source.cpp|it contains the source code           |
-|input.txt    | https://github.com/ArshiaClare/4883-Programming_Techniques-Clare/blob/master/Assignments/11727/input.txt|input that I got from debug on uva    |
-|11727.pdf    | https://github.com/ArshiaClare/4883-Programming_Techniques-Clare/blob/master/Assignments/11727/11727.pdf |the problem pdf                    |
+|source.cpp   | [source](https://github.com/ArshiaClare/4883-Programming_Techniques-Clare/blob/master/Assignments/P01/11727/source.cpp)|it contains the source code           |
+|input.txt    | [input](https://github.com/ArshiaClare/4883-Programming_Techniques-Clare/blob/master/Assignments/P01/11727/input.txt)|input that I got from debug on uva    |
+|11727.pdf    | [pdf](https://github.com/ArshiaClare/4883-Programming_Techniques-Clare/blob/master/Assignments/P01/11727/11727.pdf)|the problem pdf                    |
