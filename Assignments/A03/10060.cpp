@@ -38,14 +38,17 @@ int main() {
   vector<point> v;
   cin >> N;
   while(N != 0){
+  //read in input
     for(int i = 0; i < N; i++){
       cin >> t;
       cin>>x1>>y1;
       v.push_back(point(x1,y1));
       found = 0;
+      //if found == 2 then the first coordinate matches the last pair (its a good shape)
       while(found < 2){
         cin >> x1 >> y1;
         v.push_back(point(x1,y1));
+        //finding the last pair
         if(v[0].x == v[v.size()-1].x){
           found++;
         }
@@ -57,10 +60,13 @@ int main() {
         }
       }
       v.pop_back();
+      //volume
       at = area(v) * t;
+      //sum of volumes
       a = a+at;
       v.clear();
     }
+    //manhole radius and thickness
     cin >> MR >> MT;
     double bottom_area = PI*(pow(MR,2))*MT;
     int num = a/bottom_area;
