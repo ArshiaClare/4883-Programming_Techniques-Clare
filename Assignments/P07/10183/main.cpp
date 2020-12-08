@@ -41,9 +41,9 @@ int main() {
   cin>>beg>>end;
   
   while(end != 0 && beg != 0){
-    cout<<beg<<" "<<end<<endl;
+    //cout<<beg<<" "<<end<<endl;
     if(beg == 0 && end == 1){
-      cout<< 1 <<endl;
+      //cout<< 1 <<endl;
       cin>>beg>>end;
     }
     else{
