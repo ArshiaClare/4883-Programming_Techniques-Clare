@@ -12,3 +12,5 @@ specifications.
 | :---: | -------------------------- | ---------------------------------------------------------- |
 |1|[pdf](https://github.com/ArshiaClare/4883-Programming_Techniques-Clare/blob/master/Assignments/P02/727/727.pdf)| pdf |
 |2|[source](https://github.com/ArshiaClare/4883-Programming_Techniques-Clare/blob/master/Assignments/P02/727/main.cpp) | source|
+|3|[input](https://github.com/ArshiaClare/4883-Programming_Techniques-Clare/blob/master/Assignments/P02/727/input.txt) | input|
+|4|[output](https://github.com/ArshiaClare/4883-Programming_Techniques-Clare/blob/master/Assignments/P02/727/output.txt) | output|
