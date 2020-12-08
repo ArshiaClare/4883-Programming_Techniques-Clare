@@ -12,10 +12,12 @@ int main() {
   while(queuesize != 0){
     cin>>num;
     while(num !=0){
+      //A_station: 1-n train   
       queue<int> A_station;
       for(int i = 0; i < queuesize; i++){
         A_station.push(i+1);
       }
+      //station (temp)
       stack<int> station;
       for(int i = 0; i < queuesize; i++){
         // cout<<num<<endl;
@@ -28,6 +30,7 @@ int main() {
             A_station.pop();
           }
         }
+        //if its not on top of station then pattern dont fit
         else if(A_station.empty()){
           if(station.top() == num){
             station.pop();
